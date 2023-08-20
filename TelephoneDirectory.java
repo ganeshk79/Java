@@ -64,19 +64,19 @@ public class TelephoneDirectory  implements ActionListener
 		{
 	    	String command = e.getActionCommand();
 			if("Clear".equals(command))
-			{	t1.setText(" ");
-				t2.setText(" ");
-				t3.setText(" ");
-				t4.setText(" ");
+			{	t1.setText("");
+				t2.setText("");
+				t3.setText("");
+				t4.setText("");
 			}
 			else if("Next".equals(command))
 			{
 				Contacts ob = new Contacts();
 				ob.addContact(t1.getText(),t2.getText(),t3.getText(),t4.getText());
-				t1.setText(" ");
-				t2.setText(" ");
-				t3.setText(" ");
-				t4.setText(" ");
+				t1.setText("");
+				t2.setText("");
+				t3.setText("");
+				t4.setText("");
 			}
 			else if("Submit".equals(command))
 			{
